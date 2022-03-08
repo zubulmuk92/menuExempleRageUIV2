@@ -41,10 +41,10 @@ function menu()
         end, function()
         end)
 
-    end
+        if not RageUI.Visible(menuTest) then
+            menuTest=RMenu:DeleteType("Titre", true)
+        end
 
-    if not RageUI.Visible(menuTest) then
-        menuTest=RMenu:DeleteType("Titre", true)
     end
 
 end
